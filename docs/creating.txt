@@ -1,0 +1,13 @@
+First npm init. 
+-This will create a package.json file. 
+This file contains metadata about this project such as name, version, description etc. 
+It also lists all the packages this project depends on, along with their versions.
+
+Then npm install.
+-Will create package-lock.json file. 
+This also lists all the packages this project depends on with their versions.
+The data about these packages is more detailed
+-If there are dependencies listed in package.json, these modules will also be installed along with package-lock.json when using "npm install".
+
+Then install modules using https://www.npmjs.com/ 
+Details will be added to files mentioned above

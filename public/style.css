@@ -1,0 +1,95 @@
+:root{
+    --light: #dce1e3;
+    --medium: #ccd3d7;
+    --dark: #082F41;
+}
+
+
+body{
+    margin: 3rem;
+    background-color: var(--medium);
+    color: var(--dark);
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+    background-color: var(--light);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    margin: auto;
+}
+
+h2{
+    background-color: var(--medium);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    margin: 0;
+}
+
+a{
+    color: var(--dark);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 1.3rem;
+    margin: 2rem 0 1rem 0;
+}
+
+input, textarea{
+    background-color: var(--light);
+    border: var(--dark) solid .1rem;
+    color: var(--dark);
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+button{
+    width: fit-content;
+    margin: auto;
+    margin-top: 2rem;
+    background-color: var(--light);
+    border: var(--dark) solid .1rem;
+    color: var(--dark);
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    border-radius: .8rem;
+}
+.container-all-blogs{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    margin-top: 2rem;
+    width: 80vw;
+}
+
+.container-blog{
+    background-color: var(--light);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+#blog-body{
+    margin-bottom: 2rem;
+}
+
+#delete{
+    background-color: var(--light);
+    border: var(--dark) solid .1rem;
+    color: var(--dark);
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+}

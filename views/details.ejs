@@ -1,0 +1,11 @@
+<%- include("./partials/head.ejs") %>
+</head>
+<body>
+
+    <h2><%= blog.title %></h2>
+    <h3 id="blog-body"><%= blog.body %></h3>
+    <a  id="delete" data-doc="<%=  blog._id %>">Delete</a>
+
+
+    <script src="/script.js"></script>
+<%- include("./partials/foot.ejs") %>
