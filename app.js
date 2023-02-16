@@ -16,7 +16,7 @@ mongoose.connect(db, {useNewUrlParser: true, useUnifiedTopology: true })
         console.log("Connected to database")
         //listens for requests
         app.listen(4000)
-    }).catch(err => console.log(err))
+    }).catch(err => console.log(err)) 
 
 
 // //sandbox route for adding a new blog
