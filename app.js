@@ -1,9 +1,12 @@
+//middleware = the time between when the server gets the request and sends the response
+
 const express = require("express")
 const morgan = require("morgan")
 const mongoose = require("mongoose")
 
 //importing the blog model
 const Blog = require("./models/blog")
+//require render function
 const { render } = require("ejs")
 //express app
 const app = express()
@@ -66,11 +69,11 @@ app.set("view engine", "ejs")
 
 // app.use((req, res, next)=>{
 //     console.log(req.hostname, req.path, req.method)
-//     console.log("Request mad")
+//     console.log("Request made")
 //     //allows next code to continue
 //     next()
 // })
-app.use(morgan("Request made"))
+app.use(morgan("Request made")) 
 app.use(morgan("dev"))
 //takes form data that someone puts in website form, parses into object to request
 app.use(express.urlencoded({ extended:true }))
